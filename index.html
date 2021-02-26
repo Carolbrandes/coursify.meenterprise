@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <div class="container grid">
+        <main class="acesso">
+            <h1><img src="./src/images/logo.svg" alt=""></h1>
+            <h2 class="acesso__titulo">
+                Seja bem vindo ao
+                <span>Coursify.Me Enterprise</span>
+            </h2>
+            <p class="acesso__texto">
+                Although the bobcat is rarely seen, it is the most common wildcat in North America.
+            </p>
+
+            <div class="acesso__btns acesso__btn-cadastro">
+                <button id="acessoCadastro" class="botao-ativo">Cadastro</button>
+                <button id="acessoLogin" class="botao-inativo">Login</button>
+            </div>
+
+            <div id="wrapper-form" class="acesso__formularios">
+                <form class="form-cadastro" action="" method="post">
+                    <input type="text" name="escola" placeholder="Nome da Escola">
+                    <input type="email" name="email" placeholder="Seu e-mail">
+                    <input type="password" name="senha" placeholder="Crie uma senha">
+
+                    <div class="acesso__formularios-grid">
+                        <select name="codigo">
+                            <option value="+55" selected>+55</option>
+                        </select>
+
+                        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="00 00000-0000">
+                    </div>
+
+                    <button>Cadastrar</button>
+                </form>
+
+                <form class="form-login" action="" method="post">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <div class="acesso__formularios-esqueci-senha"><a href="#">Esqueci minha senha</a></div>
+                    <button>Login</button>
+                </form>
+            </div>
+
+            <footer class="acesso__footer">2020 © Coursify.Me. Todos os direitos reservados</footer>
+        </main>
+
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel-child ativo" carouselItem="0">
+                    <img src="./src/images/image_01.svg" alt="#">
+                </div>
+                <div class="carousel-child" carouselItem="1">
+                    <img src="./src/images/image_02.svg" alt="#">
+                </div>
+            </div>
+            <div class="dots-carousel"></div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script defer type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

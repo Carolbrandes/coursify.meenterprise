@@ -1,0 +1,92 @@
+.carousel-wrapper{
+    position: relative;
+}
+
+
+.carousel {
+    height          : 490px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.carousel-child{
+    display: none;
+    transition: .2s;
+}
+
+.carousel-child.ativo{
+    display: block;
+}
+
+.carousel-child:nth-child(odd) {
+    position : relative;
+    left     : 0;
+    top      : 0;
+    opacity  : 1;
+    animation: carouselOddChild 5s linear;
+}
+
+.carousel-child:nth-child(even) {
+    position : relative;
+    left     : 0;
+    top      : 0;
+    opacity  : 1;
+    animation: carouselEvenChild 5s linear;
+}
+
+
+@keyframes carouselOddChild {
+    from {
+        left   : -471px;
+        top    : -120px;
+        opacity: 0;
+    }
+
+    to {
+        left   : 0;
+        top    : 0;
+        opacity: 1;
+    }
+}
+
+@keyframes carouselEvenChild {
+    from {
+        left   : 471px;
+        top    : 120px;
+        opacity: 0;
+    }
+
+    to {
+        left   : 0;
+        top    : 0;
+        opacity: 1;
+    }
+}
+
+.dots-carousel{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+
+.dot {
+    display: block;
+    width           : 12px;
+    height          : 12px;
+    background-color: var(--cinza05);
+    border-color    : var(--cinza05);
+    border-radius: 50%;
+}
+
+.dot:nth-child(odd){
+    margin-right: 10px;
+}
+
+.dot.ativo {
+    background-color: var(--verde01);
+    border-color    : var(--verde01);
+}

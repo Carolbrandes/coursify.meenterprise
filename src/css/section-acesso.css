@@ -1,0 +1,225 @@
+.acesso {
+    background-color: #fff;
+    border-radius   : 30px;
+    box-shadow      : 0px 0px 10px #3333331F;
+    padding         : 30px 30px;
+}
+
+.acesso__titulo {
+    font-size     : 22px;
+    font-weight   : normal;
+    padding-top   : 25px;
+    padding-bottom: 20px;
+}
+
+.acesso__titulo>span {
+    display    : block;
+    color      : var(--verde01);
+    font-weight: bold;
+}
+
+.acesso__texto {
+    padding-bottom: 40px;
+    line-height   : 25px;
+}
+
+.acesso__btns {
+    display        : flex;
+    justify-content: space-between;
+    width          : var(--width-form);
+    position       : relative;
+}
+
+.acesso__btn-cadastro::after {
+    content         : "";
+    display         : block;
+    width           : 105px;
+    height          : 4px;
+    border-radius   : 2px;
+    background-color: var(--verde01);
+    position        : absolute;
+    left            : -3px;
+    bottom          : -3px;
+}
+
+.acesso__btn-login::after {
+    content         : "";
+    display         : block;
+    width           : 75px;
+    height          : 4px;
+    border-radius   : 2px;
+    background-color: var(--verde01);
+    position        : absolute;
+    left            : -3px;
+    bottom          : -3px;
+}
+
+.acesso__btns button {
+    border          : none;
+    outline         : none;
+    background-color: transparent;
+    font-size       : 22px;
+    cursor          : pointer;
+}
+
+.acesso__formularios {
+    width      : var(--width-form);
+    padding-top: 25px;
+    height     : 290px;
+    overflow-y : hidden;
+}
+
+.acesso__formularios-grid {
+    display              : grid;
+    grid-template-columns: 97px 382px;
+    gap                  : 5px;
+}
+
+.acesso__formularios input[type="text"],
+.acesso__formularios input[type="email"],
+.acesso__formularios input[type="password"] {
+    display      : block;
+    width        : 100%;
+    height       : 35px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow   : 0px 0px 6px #3333330F;
+    border       : 0.20000000298023224px solid #C4C4C4;
+    padding-left : 15px;
+}
+
+
+::placeholder {
+    color      : var(--cinza04);
+    font-size  : 16px;
+    font-family: "SF UI Text";
+}
+
+.acesso__formularios select {
+    height               : 35px;
+    border-radius        : 8px;
+    appearance           : none;
+    -webkit-appearance   : none;
+    -moz-appearance      : none;
+    box-shadow           : 0px 0px 6px #3333330F;
+    border               : 0.20000000298023224px solid #C4C4C4;
+    padding-left         : 15px;
+    color                : var(--cinza04);
+    font-size            : 16px;
+    font-family          : "SF UI Text";
+    background-image     : url(../images/icon-chevron-down.svg);
+    background-size      : 15px;
+    background-repeat    : no-repeat;
+    background-position-x: 65px;
+    background-position-y: center;
+}
+
+.acesso__formularios input[type="text"]:focus,
+.acesso__formularios input[type="email"]:focus,
+.acesso__formularios input[type="password"]:focus,
+.acesso__formularios select:focus{
+    outline: none;
+    border-color: var(--verde01);
+}
+
+
+
+.acesso__formularios button {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    outline         : none;
+    border          : none;
+    background-color: var(--verde01);
+    color           : #fff;
+    font-size       : 18px;
+    font-weight     : bold;
+    width           : 160px;
+    height          : 40px;
+    cursor          : pointer;
+    border-radius   : 10px;
+    margin-left     : auto;
+    margin-right    : auto;
+    text-align      : center;
+}
+
+.acesso__formularios a {
+    color          : var(--cinza02);
+    text-decoration: none;
+}
+
+.acesso__formularios-esqueci-senha {
+    padding-bottom: 30px;
+    position      : relative;
+    top           : -10px;
+}
+
+#acessoLogin {
+    transition: 2s linear;
+}
+
+#acessoCadastro {
+    transition: 2.2s linear;
+}
+
+.botao-ativo {
+    display    : block;
+    color      : var(--cinza02);
+    font-weight: bold;
+}
+
+.botao-inativo {
+    color      : var(--cinza03);
+    font-weight: 100;
+}
+
+.posicao-botao-ativo-login {
+    transform: translateX(-420px);
+}
+
+.posicao-botao-inativo-cadastro {
+    transform: translateX(390px);
+}
+
+.posicao-botao-ativo-cadastro {
+    transform: translateX(2px);
+}
+
+.posicao-botao-inativo-login {
+    transform: translateX(-10px);
+}
+
+.form-cadastro {
+    margin-bottom   : 20px;
+    transition      : 2s ease-in-out;
+    transition-delay: 1s;
+}
+
+.form-login {
+    transition      : 2.2s ease-in-out;
+    transition-delay: 1s;
+}
+
+.posicao-formCadastro-inativo {
+    transform: translateY(-290px);
+}
+
+.posicao-formLogin-ativo {
+    transform: translateY(-280px);
+}
+
+.posicao-formCadastro-ativo {
+    transform: translateY(3px);
+}
+
+.posicao-formLogin-inativo {
+    transform: translateY(280px);
+}
+
+
+.acesso__footer {
+    font-size  : 14px;
+    color      : var(--cinza02);
+    text-align : center;
+    padding-top: 80px;
+}

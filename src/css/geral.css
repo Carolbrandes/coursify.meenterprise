@@ -1,0 +1,28 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--cinza01);
+    color           : var(--cinza02);
+    font-family     : "SF UI Text";
+    overflow-x      : hidden;
+}
+
+.container {
+    width       : 95%;
+    max-width   : 1263px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.grid {
+    display              : grid;
+    grid-template-columns: 544px 671px;
+    gap                  : 48px;
+    padding              : 30px 30px;
+    align-items          : center;
+}
